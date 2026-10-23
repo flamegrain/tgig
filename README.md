@@ -1,47 +1,114 @@
-# T-Gig (Boston) 🚇
-### MBTA Subway-Connected Student Job & Gig Aggregator for Boston College Students
+# T-Gig Boston 🚇
+### MBTA Transit-Connected Student Job & Gig Aggregator for Greater Boston
 
-**T-Gig** 是一款专为大波士顿地区在校大学生（Harvard、MIT、Northeastern、BU、BC、Tufts、Emerson 等）打造的轻量兼职与实习机会智能聚合平台。
+[![Live Demo](https://img.shields.io/badge/Live_Demo-tgig--lovat.vercel.app-10b981?style=for-the-badge&logo=vercel)](https://tgig-lovat.vercel.app)
+[![GitHub stars](https://img.shields.io/github/stars/flamegrain/tgig?style=for-the-badge&color=blue)](https://github.com/flamegrain/tgig)
+[![React](https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite_6-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 
----
-
-## 💡 产品解决的核心痛点
-
-1. **解决交通痛点（MBTA The T 沿线导向）**
-   - 大部分波士顿大学生没有私家车，极度依赖红线（Red）、橙线（Orange）、绿线（Green）、蓝线（Blue）。
-   - T-Gig 将波士顿地铁全图与岗位坐标结合，直观展示岗位距地铁站步行时间（≤ 2分钟、≤ 5分钟、≤ 10分钟）。
-2. **解决信任与薪资拖欠痛点**
-   - 传统平台虚假岗位多、拖欠薪水。T-Gig 展示**雇主按时发薪率（Pay Punctuality Rate）**、大学生真实评价与 Vibe Check。
-3. **解决学生签证身份痛点（F-1 / CPT / OPT）**
-   - 一键筛选 `🎓 On-Campus (F-1 100% Safe)` 与 `⚡ CPT/OPT Eligible`，避免触碰违规红线。
-4. **薪资直观色阶（Wage Color Coding）**
-   - 地图上直接标出时薪，按色阶区分：
-     - 🟢 **$30+/hr**：高阶家教、科研助理（RA）、技术岗位；
-     - 🔵 **$20 - $29/hr**：IT 技术支持、校园 Desk、活动会务；
-     - 🟡 **$15 - $19/hr**：咖啡师、书店零售、餐饮等基础时薪。
-5. **轻量无中介 + 邮件订阅（Daily Digest）**
-   - 纯聚合展示（聚合自 Indeed、Craigslist、Reddit r/bostonjobs、各大高校官方就业中心），点击直接跳转原网页申请。
-   - 支持单条岗位“一键转发至邮箱”以及定制每天早上 8:00 AM 的 MBTA 沿线兼职日报推送。
+[English](README.md) | [中文说明](README_zh.md)
 
 ---
 
-## 🛠️ 技术栈与设计亮点
+> **T-Gig** is a lightweight, transit-first student job and gig aggregation platform designed specifically for college students in Greater Boston (Harvard, MIT, Northeastern, BU, BC, Tufts, Emerson, Suffolk, etc.). It bridges student opportunities with the MBTA subway transit network.
 
-- **前端技术**：Vite + React 19 + TypeScript + Tailwind CSS
-- **地图引擎**：Leaflet（加载暗黑高对比度瓦片图层 + MBTA 官方配色地铁折线与大学站点）
-- **UI & 动效**：Lucide React 图标、Canvas-Confetti 订阅反馈、Plus Jakarta Sans 现代美式大学审美排版
-- **运行性能**：构建仅需 1.5 秒，无需繁重后端，开箱即用。
+👉 **Live Production URL**: [https://tgig-lovat.vercel.app](https://tgig-lovat.vercel.app)
 
 ---
 
-## 🚀 启动与体验指南
+## 📸 Interface Preview
+
+![T-Gig Boston Interactive Interface](assets/preview.png)
+
+---
+
+## 💡 Key Features & Pain Points Solved
+
+### 1. 🚇 MBTA Subway-Connected Navigation (The T)
+Most college students in Boston rely entirely on the MBTA subway lines (**Red, Orange, Green, and Blue**). T-Gig integrates transit lines and station coordinates directly into the map view:
+- **Walk-to-T Filter**: Filter jobs by walking distance to the nearest station (`≤ 3 mins`, `≤ 5 mins`, or any distance).
+- **Line Filter**: View opportunities along specific transit lines (e.g., Red Line for Cambridge/Somerville/South Boston; Orange Line for Northeastern/Downtown/Assembly).
+
+### 2. 💸 Wage-Coded Map Markers
+Quickly assess compensation at a glance with color-coded wage markers:
+- 🟢 **$30+/hr (Emerald/Gold)**: Specialized research assistants (RA), hardware/software co-ops, technical consulting.
+- 🔵 **$20 – $29/hr (Cyan)**: Campus IT helpdesk, event coordinators, project assistants, tour guides.
+- 🟡 **$15 – $19/hr (Amber)**: Campus library circulation, front desk proctors, retail & cafe positions.
+
+### 3. 🎓 Visa & Work Authorization Transparency
+Eliminate compliance anxiety for international students:
+- `🎓 F-1 Safe On-Campus`: 100% compliant with student visa employment limits (≤ 20 hrs/wk during terms).
+- `⚡ CPT/OPT Eligible`: Off-campus pre-approved internships and tech co-ops with verified E-Verify employers.
+
+### 4. 🛡️ 100% Real, Verified Openings (Zero Mock Data)
+Every single job listing in T-Gig is verified with a **direct, canonical application or post URL**:
+- **Reddit Community Gigs**: Direct links to active threads in `r/BostonJobs` and `r/NEU`.
+- **Craigslist Boston Gigs**: Direct single-post detail pages (`craigslist.org/view/d/...`).
+- **Direct Employer ATS & Campus Portals**: Greenhouse direct job IDs (Formlabs, Datadog, CarGurus, Recorded Future) and university student employment offices (Harvard SEO, BU Student Link).
+
+### 5. ⚡ Real-Time MBTA V3 Service Alerts
+Built-in live service ticker powered by the official MBTA V3 API, displaying real-time subway delays, maintenance notices, and elevator alerts right above the search controls.
+
+### 6. 📬 Email Forwarding & Daily Morning Digest
+- **One-Click Forward**: Send individual job details directly to your student inbox.
+- **Daily Digest Subscription**: Receive an 8:00 AM curated summary of new gigs along your commute route.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: [React 19](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/) + [Vite 6](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) + Modern Gen-Z dark aesthetic
+- **Map & Geo**: [Leaflet](https://leafletjs.com/) with **Esri World Dark Gray Canvas** (clean, high-contrast, free of watermarks)
+- **Live Data**: Official [MBTA API V3](https://api-v3.mbta.com/) for real-time transit status
+- **Deployment**: [Vercel](https://vercel.com/) with automated GitHub CI/CD
+
+---
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Node.js 18+ or 20+
+- npm / pnpm / yarn
+
+### Installation
 
 ```bash
-# 启动本地开发服务器
-npm run dev
+# Clone the repository
+git clone https://github.com/flamegrain/tgig.git
+cd tgig
 
-# 构建生产版本
-npm run build
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
 ```
 
-启动后在浏览器打开 `http://localhost:5173` 即可进行交互体验！
+Visit `http://localhost:5173` to explore locally.
+
+### Production Build
+
+```bash
+# Type check and bundle for production
+npm run build
+
+# Preview production build locally
+npm run preview
+```
+
+---
+
+## 🌐 Deployment
+
+The project is continuously deployed to Vercel on every push to the `main` branch.
+
+- **Production URL**: [https://tgig-lovat.vercel.app](https://tgig-lovat.vercel.app)
+- **GitHub Repository**: [https://github.com/flamegrain/tgig](https://github.com/flamegrain/tgig)
+
+---
+
+## 📄 License
+
+MIT License © 2026 [flamegrain](https://github.com/flamegrain)
