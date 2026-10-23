@@ -19,7 +19,7 @@
 
 ## 📸 Interface Preview
 
-![T-Gig Boston Interactive Interface](assets/preview.png)
+![T-Gig Boston Interactive Interface](assets/tgig-full-preview.png)
 
 ---
 

@@ -18,9 +18,14 @@ async function capture() {
   await new Promise(r => setTimeout(r, 4000));
   
   // Capture full page screenshot
-  const outPath = path.resolve(__dirname, '../assets/preview.png');
+  const outPath = path.resolve(__dirname, '../assets/tgig-full-preview.png');
   await page.screenshot({
     path: outPath,
+    fullPage: true,
+  });
+  const fallbackPath = path.resolve(__dirname, '../assets/preview.png');
+  await page.screenshot({
+    path: fallbackPath,
     fullPage: true,
   });
   

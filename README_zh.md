@@ -19,7 +19,7 @@
 
 ## 📸 界面效果预览
 
-![T-Gig Boston 界面预览](assets/preview.png)
+![T-Gig Boston 界面预览](assets/tgig-full-preview.png)
 
 ---
 
