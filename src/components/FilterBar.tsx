@@ -11,12 +11,14 @@ export interface FilterState {
   minWage: number;
   selectedCategory: JobCategory | 'All';
   selectedSource: JobSource | 'All';
+  showExpired?: boolean;
 }
 
 interface FilterBarProps {
   filters: FilterState;
   onChange: (filters: FilterState) => void;
   totalFiltered: number;
+  expiredCount?: number;
   onRefreshCrawl?: () => void;
   isCrawling?: boolean;
 }
@@ -25,6 +27,7 @@ export const FilterBar: React.FC<FilterBarProps> = ({
   filters,
   onChange,
   totalFiltered,
+  expiredCount = 0,
   onRefreshCrawl,
   isCrawling,
 }) => {
@@ -271,14 +274,28 @@ export const FilterBar: React.FC<FilterBarProps> = ({
         </div>
 
         {/* Clear Filters & Count */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2.5">
           <span className="text-xs text-slate-400">
             Matched <strong className="text-emerald-400">{totalFiltered}</strong> real gigs
           </span>
+
+          {expiredCount > 0 && (
+            <button
+              onClick={() => onChange({ ...filters, showExpired: !filters.showExpired })}
+              className={`px-2 py-0.5 rounded-lg text-[11px] font-semibold transition-all border ${
+                filters.showExpired
+                  ? 'bg-amber-500/20 text-amber-300 border-amber-500/40'
+                  : 'bg-slate-900 text-slate-500 border-slate-800 hover:text-slate-300'
+              }`}
+            >
+              {filters.showExpired ? `Hide Expired (${expiredCount})` : `Show Expired (${expiredCount})`}
+            </button>
+          )}
+
           {isFiltered && (
             <button
               onClick={clearFilters}
-              className="text-xs text-rose-400 hover:text-rose-300 font-semibold underline underline-offset-2"
+              className="text-xs text-rose-400 hover:text-rose-300 font-semibold underline underline-offset-2 ml-1"
             >
               Reset
             </button>

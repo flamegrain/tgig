@@ -81,5 +81,8 @@ export interface JobListing {
   sourceUrl: string;
   postedAgo: string;
   featured?: boolean;
+  status?: 'active' | 'expired' | 'checking';
+  lastVerifiedAt?: string;
+  healthCheckStatus?: 'healthy' | 'dead_link' | 'warning';
   reviews: EmployerReview[];
 }

@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "sync:jobs": "node scripts/sync-jobs.cjs"
   },
   "dependencies": {
     "canvas-confetti": "^1.9.4",

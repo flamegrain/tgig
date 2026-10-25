@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { Navbar } from './components/Navbar';
 import { FilterBar, FilterState } from './components/FilterBar';
 import { LiveMbtaBanner } from './components/LiveMbtaBanner';
@@ -24,12 +24,25 @@ export function App() {
     minWage: 15,
     selectedCategory: 'All',
     selectedSource: 'All',
+    showExpired: false,
   });
 
   // Selected Job for Modal & Map Sync
   const [selectedJob, setSelectedJob] = useState<JobListing | null>(null);
   const [isSubscribeOpen, setIsSubscribeOpen] = useState(false);
   const [mobileTab, setMobileTab] = useState<'map' | 'list'>('map');
+
+  // Background Periodic Refresh (Every 10 minutes)
+  useEffect(() => {
+    const timer = setInterval(async () => {
+      const result = await JobCrawlerService.refreshFeeds();
+      setJobs([...result.jobs]);
+      const now = new Date();
+      setLastSyncTime(now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }));
+    }, 10 * 60 * 1000);
+
+    return () => clearInterval(timer);
+  }, []);
 
   // On-demand Crawl Refresh
   const handleRefreshCrawl = async () => {
@@ -41,9 +54,19 @@ export function App() {
     setLastSyncTime(now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }));
   };
 
+  const expiredJobsCount = useMemo(() => {
+    return jobs.filter((j) => j.status === 'expired' || j.healthCheckStatus === 'dead_link').length;
+  }, [jobs]);
+
   // Filter Logic
   const filteredJobs = useMemo(() => {
     return jobs.filter((job) => {
+      // Expired / Dead Link Filter (hidden by default unless showExpired is enabled)
+      const isExpired = job.status === 'expired' || job.healthCheckStatus === 'dead_link';
+      if (!filters.showExpired && isExpired) {
+        return false;
+      }
+
       // Search
       if (filters.search) {
         const query = filters.search.toLowerCase();
@@ -121,13 +144,18 @@ export function App() {
                 <span>Live Feed from WayUp • Sittercity • Wag! • Superprof • Snagajob • Reddit • Craigslist</span>
               </span>
 
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold">
+                <CheckCircle2 className="w-3.5 h-3.5" />
+                <span>Health Audit: {crawlerStats.activeJobs} Active • {crawlerStats.expiredJobs} Pruned</span>
+              </span>
+
               <button
                 onClick={handleRefreshCrawl}
                 disabled={isCrawling}
                 className="inline-flex items-center gap-1 text-[11px] text-slate-400 hover:text-white px-2.5 py-1 rounded-full bg-slate-800/80 border border-slate-700 transition-colors"
               >
                 <RefreshCw className={`w-3 h-3 ${isCrawling ? 'animate-spin text-emerald-400' : ''}`} />
-                <span>{isCrawling ? 'Crawling latest feeds...' : `Synced ${lastSyncTime}`}</span>
+                <span>{isCrawling ? 'Auditing & crawling feeds...' : `Synced ${lastSyncTime}`}</span>
               </button>
             </div>
 
@@ -162,6 +190,7 @@ export function App() {
           filters={filters}
           onChange={setFilters}
           totalFiltered={filteredJobs.length}
+          expiredCount={expiredJobsCount}
           onRefreshCrawl={handleRefreshCrawl}
           isCrawling={isCrawling}
         />

@@ -3,8 +3,11 @@ import { REAL_CRAWLED_JOBS } from '../data/realJobs';
 
 export interface CrawlerStats {
   totalJobs: number;
+  activeJobs: number;
+  expiredJobs: number;
   sources: { source: JobSource; count: number; color: string }[];
   lastCrawledAt: string;
+  autoSyncIntervalMinutes: number;
 }
 
 const SOURCE_COLORS: Record<JobSource, string> = {
@@ -26,36 +29,67 @@ const SOURCE_COLORS: Record<JobSource, string> = {
 export class JobCrawlerService {
   private static cachedJobs: JobListing[] = [...REAL_CRAWLED_JOBS];
   private static lastCrawled: Date = new Date();
+  public static readonly AUTO_SYNC_INTERVAL_MINUTES = 360; // 6 hours
 
   /**
-   * Get all aggregated real jobs
+   * Get all aggregated jobs (optionally filtering out expired/dead links)
    */
-  public static getJobs(): JobListing[] {
+  public static getJobs(includeExpired = false): JobListing[] {
+    if (includeExpired) {
+      return this.cachedJobs;
+    }
+    return this.cachedJobs.filter(
+      (job) => job.status !== 'expired' && job.healthCheckStatus !== 'dead_link'
+    );
+  }
+
+  /**
+   * Get all jobs raw array
+   */
+  public static getAllRawJobs(): JobListing[] {
     return this.cachedJobs;
   }
 
   /**
    * Trigger on-demand re-crawl / refresh from active student feeds
    */
-  public static async refreshFeeds(): Promise<{ jobs: JobListing[]; newCount: number }> {
-    // Simulate real-time crawl network delay
+  public static async refreshFeeds(): Promise<{
+    jobs: JobListing[];
+    activeCount: number;
+    expiredCount: number;
+  }> {
+    // Network crawl simulation delay
     await new Promise((resolve) => setTimeout(resolve, 800));
     this.lastCrawled = new Date();
 
-    // In production, this coordinates with Python background scraper or RSS pipeline
+    const activeCount = this.cachedJobs.filter(
+      (j) => j.status !== 'expired' && j.healthCheckStatus !== 'dead_link'
+    ).length;
+    const expiredCount = this.cachedJobs.length - activeCount;
+
     return {
       jobs: this.cachedJobs,
-      newCount: this.cachedJobs.length,
+      activeCount,
+      expiredCount,
     };
   }
 
   /**
-   * Get breakdown statistics by platform source
+   * Get breakdown statistics by platform source and health status
    */
   public static getStats(): CrawlerStats {
     const counts: Partial<Record<JobSource, number>> = {};
+    let activeJobs = 0;
+    let expiredJobs = 0;
+
     this.cachedJobs.forEach((job) => {
-      counts[job.originalSource] = (counts[job.originalSource] || 0) + 1;
+      const isExpired = job.status === 'expired' || job.healthCheckStatus === 'dead_link';
+      if (isExpired) {
+        expiredJobs++;
+      } else {
+        activeJobs++;
+        counts[job.originalSource] = (counts[job.originalSource] || 0) + 1;
+      }
     });
 
     const sources = Object.entries(counts).map(([source, count]) => ({
@@ -66,8 +100,11 @@ export class JobCrawlerService {
 
     return {
       totalJobs: this.cachedJobs.length,
+      activeJobs,
+      expiredJobs,
       sources,
       lastCrawledAt: this.lastCrawled.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
+      autoSyncIntervalMinutes: this.AUTO_SYNC_INTERVAL_MINUTES,
     };
   }
 

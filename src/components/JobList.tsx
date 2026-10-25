@@ -35,6 +35,7 @@ export const JobList: React.FC<JobListProps> = ({
     <div className="space-y-3.5">
       {jobs.map((job) => {
         const isSelected = selectedJob?.id === job.id;
+        const isExpired = job.status === 'expired' || job.healthCheckStatus === 'dead_link';
         const lineColor = MBTA_COLORS[job.nearestStation.line];
         const sourceColor = JobCrawlerService.getSourceColor(job.originalSource);
 
@@ -43,6 +44,8 @@ export const JobList: React.FC<JobListProps> = ({
             key={job.id}
             onClick={() => onSelectJob(job)}
             className={`group relative p-4 rounded-2xl border transition-all cursor-pointer ${
+              isExpired ? 'opacity-70 bg-slate-900/40' : ''
+            } ${
               isSelected
                 ? 'bg-slate-850/90 border-emerald-500/80 ring-2 ring-emerald-500/30 shadow-glow-green'
                 : 'bg-slate-900/70 border-slate-800/80 hover:border-slate-700 hover:bg-slate-850/60'
@@ -51,7 +54,7 @@ export const JobList: React.FC<JobListProps> = ({
             {/* Top row: Company, Source Pill & Wage */}
             <div className="flex items-start justify-between gap-3">
               <div>
-                <div className="flex items-center gap-2 mb-1">
+                <div className="flex items-center gap-2 mb-1 flex-wrap">
                   {/* Platform Source Tag */}
                   <span
                     className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-extrabold tracking-wide uppercase"
@@ -64,6 +67,13 @@ export const JobList: React.FC<JobListProps> = ({
                     <Globe className="w-2.5 h-2.5" />
                     {job.originalSource.replace(' (r/bostonjobs)', '').replace(' (Boston Student Hub)', '')}
                   </span>
+
+                  {isExpired && (
+                    <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-extrabold tracking-wide uppercase bg-amber-500/20 text-amber-300 border border-amber-500/40">
+                      ⚠️ Expired / Closed
+                    </span>
+                  )}
+
                   <span className="text-xs font-semibold text-slate-400">
                     {job.company}
                   </span>

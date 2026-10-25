@@ -12,6 +12,7 @@ import {
   CheckCircle2,
   DollarSign,
   AlertCircle,
+  AlertTriangle,
   ThumbsUp,
   Share2,
   Calendar,
@@ -128,6 +129,26 @@ export const JobModal: React.FC<JobModalProps> = ({ job, onClose }) => {
               </span>
             </div>
           </div>
+
+          {/* Health & Expiration Status Notice */}
+          {job.status === 'expired' || job.healthCheckStatus === 'dead_link' ? (
+            <div className="p-3.5 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <AlertTriangle className="w-4 h-4 text-amber-400 shrink-0" />
+                <span>
+                  <strong>Position Closed / Expired:</strong> This opening was detected as delisted or filled on the host platform during the scheduled health audit ({job.lastVerifiedAt || 'Recently'}).
+                </span>
+              </div>
+            </div>
+          ) : (
+            <div className="p-2.5 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                <span>Verified Active Opening • Audited on {job.lastVerifiedAt || 'Today'}</span>
+              </div>
+              <span className="text-[11px] text-emerald-500/80 font-medium hidden sm:inline">Periodic auto-sync active</span>
+            </div>
+          )}
 
           {/* Aggregator Notice Banner */}
           <div className="p-3.5 rounded-xl bg-slate-800/40 border border-slate-700/60 flex items-center justify-between text-xs text-slate-300">
@@ -306,15 +327,27 @@ export const JobModal: React.FC<JobModalProps> = ({ job, onClose }) => {
             >
               Close
             </button>
-            <a
-              href={job.sourceUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex-1 sm:flex-initial flex items-center justify-center gap-2 px-6 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold text-xs shadow-glow-green transition-transform active:scale-95"
-            >
-              <span>Apply on {job.company}</span>
-              <ExternalLink className="w-3.5 h-3.5" />
-            </a>
+            {job.status === 'expired' || job.healthCheckStatus === 'dead_link' ? (
+              <a
+                href={job.sourceUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 sm:flex-initial flex items-center justify-center gap-2 px-6 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-300 border border-amber-500/40 font-bold text-xs transition-colors"
+              >
+                <span>View Archived Posting</span>
+                <ExternalLink className="w-3.5 h-3.5" />
+              </a>
+            ) : (
+              <a
+                href={job.sourceUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 sm:flex-initial flex items-center justify-center gap-2 px-6 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold text-xs shadow-glow-green transition-transform active:scale-95"
+              >
+                <span>Apply on {job.company}</span>
+                <ExternalLink className="w-3.5 h-3.5" />
+              </a>
+            )}
           </div>
         </div>
       </div>

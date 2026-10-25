@@ -1,0 +1,144 @@
+{
+  "totalAudited": 17,
+  "activeCount": 16,
+  "expiredCount": 1,
+  "timestamp": "2026-10-25T06:26:07.843Z",
+  "details": [
+    {
+      "id": "reddit-tourguide-1e48f89",
+      "title": "Historic Walking Tour Guide ($25/hr + Tips)",
+      "url": "https://www.reddit.com/r/BostonJobs/comments/1e48f89/hiring_tour_guide_boston_ma_25hr_tips/",
+      "alive": true,
+      "statusCode": 200,
+      "reason": "Active OK"
+    },
+    {
+      "id": "reddit-neu-1uq9sut",
+      "title": "Student Project Coordinator & Campus Outreach Associate",
+      "url": "https://www.reddit.com/r/NEU/comments/1uq9sut/hiring_studentsrecent_grads_paid_parttime/",
+      "alive": true,
+      "statusCode": 200,
+      "reason": "Active OK"
+    },
+    {
+      "id": "cl-study-001",
+      "title": "Paid Research Study: AI Tool Usage in College Work & Daily Life",
+      "url": "https://www.craigslist.org/view/d/boston-paid-online-study-for-young/3TkjReM1vJvqR9ZBe1eYnx",
+      "alive": false,
+      "statusCode": 410,
+      "reason": "HTTP 410"
+    },
+    {
+      "id": "cl-audio-002",
+      "title": "Paid In-Person Audio & Video Speech Conversation Study",
+      "url": "https://www.craigslist.org/view/d/dorchester-center-paid-audio-video/sYyBKwCMexU4ZCpv7WhLLv",
+      "alive": true,
+      "statusCode": 200,
+      "reason": "Active OK"
+    },
+    {
+      "id": "cl-convo-003",
+      "title": "Bring-a-Friend Paid Dialogue & Video Study (Cambridge/Alewife)",
+      "url": "https://www.craigslist.org/view/d/belmont-paid-audio-video-conversation/uffJ8TH3U6yTvZjqY4YbN2",
+      "alive": true,
+      "statusCode": 200,
+      "reason": "Active OK"
+    },
+    {
+      "id": "gh-formlabs-8172226",
+      "title": "Hardware R&D Engineering Intern (Winter/Spring)",
+      "url": "https://careers.formlabs.com/job/8172226/apply/?gh_jid=8172226",
+      "alive": true,
+      "statusCode": 200,
+      "reason": "Active OK"
+    },
+    {
+      "id": "gh-formlabs-8241507",
+      "title": "3D Print Technician (Somerville Print Farm)",
+      "url": "https://careers.formlabs.com/job/8241507/apply/?gh_jid=8241507",
+      "alive": true,
+      "statusCode": 200,
+      "reason": "Active OK"
+    },
+    {
+      "id": "gh-datadog-8052118",
+      "title": "Software Engineering Intern (Summer Cohort)",
+      "url": "https://careers.datadoghq.com/detail/8052118/?gh_jid=8052118",
+      "alive": true,
+      "statusCode": 200,
+      "reason": "Active OK"
+    },
+    {
+      "id": "gh-datadog-8301102",
+      "title": "Associate Customer Success Manager - Boston",
+      "url": "https://careers.datadoghq.com/detail/8301102/?gh_jid=8301102",
+      "alive": true,
+      "statusCode": 200,
+      "reason": "Active OK"
+    },
+    {
+      "id": "gh-cargurus-8189070",
+      "title": "Ad Operations Specialist (Cambridge Headquarters)",
+      "url": "https://careers.cargurus.com/us/en/job/8189070?gh_jid=8189070",
+      "alive": true,
+      "statusCode": 200,
+      "reason": "Active OK"
+    },
+    {
+      "id": "gh-recfut-8859086002",
+      "title": "Associate Technical Account Manager (Cyber Threat Intel)",
+      "url": "https://job-boards.greenhouse.io/recordedfuture/jobs/8859086002",
+      "alive": true,
+      "statusCode": 200,
+      "reason": "Active OK"
+    },
+    {
+      "id": "gh-toast-8047408",
+      "title": "Territory Account Executive, Retail (Cambridge/Somerville)",
+      "url": "https://careers.toasttab.com/jobs?gh_jid=8047408",
+      "alive": true,
+      "statusCode": 200,
+      "reason": "Active OK"
+    },
+    {
+      "id": "wag-caregiver-boston",
+      "title": "Student Dog Walker & Independent Pet Caregiver",
+      "url": "https://wagwalking.com/dog-walker",
+      "alive": true,
+      "statusCode": 200,
+      "reason": "Active OK"
+    },
+    {
+      "id": "neu-tech-snell",
+      "title": "Student IT & Audio-Visual Helpdesk Technician",
+      "url": "https://service.northeastern.edu/tech?id=student_employment",
+      "alive": true,
+      "statusCode": 200,
+      "reason": "Active OK"
+    },
+    {
+      "id": "bu-mugar-circulation",
+      "title": "Library Circulation & Course Reserve Student Assistant",
+      "url": "https://www.bu.edu/seo/",
+      "alive": true,
+      "statusCode": 200,
+      "reason": "Active OK"
+    },
+    {
+      "id": "harvard-seo-assistant",
+      "title": "Student Academic Project & Office Assistant",
+      "url": "https://seo.harvard.edu/student-employment",
+      "alive": true,
+      "statusCode": 403,
+      "reason": "HTTP 403"
+    },
+    {
+      "id": "gh-formlabs-8263054",
+      "title": "Global Operations & Supply Chain Intern",
+      "url": "https://careers.formlabs.com/job/8263054/apply/?gh_jid=8263054",
+      "alive": true,
+      "statusCode": 200,
+      "reason": "Active OK"
+    }
+  ]
+}
