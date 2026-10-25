@@ -36,3 +36,7 @@ lerna-debug.log*
 .idea/
 *.swp
 *.swo
+
+# Handoff docs (prohibit syncing to git/remote)
+.handoff.md
+.handoff.*.md
