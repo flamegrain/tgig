@@ -2,14 +2,14 @@
   "totalAudited": 17,
   "activeCount": 16,
   "expiredCount": 1,
-  "timestamp": "2026-10-25T06:26:07.843Z",
+  "timestamp": "2026-10-25T15:15:17.476Z",
   "details": [
     {
       "id": "reddit-tourguide-1e48f89",
       "title": "Historic Walking Tour Guide ($25/hr + Tips)",
       "url": "https://www.reddit.com/r/BostonJobs/comments/1e48f89/hiring_tour_guide_boston_ma_25hr_tips/",
       "alive": true,
-      "statusCode": 200,
+      "statusCode": 403,
       "reason": "Active OK"
     },
     {
@@ -17,7 +17,7 @@
       "title": "Student Project Coordinator & Campus Outreach Associate",
       "url": "https://www.reddit.com/r/NEU/comments/1uq9sut/hiring_studentsrecent_grads_paid_parttime/",
       "alive": true,
-      "statusCode": 200,
+      "statusCode": 403,
       "reason": "Active OK"
     },
     {
