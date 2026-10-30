@@ -128,66 +128,6 @@ export const REAL_CRAWLED_JOBS: JobListing[] = [
     "lastVerifiedAt": "2026-10-30"
   },
   {
-    "id": "cl-study-001",
-    "title": "Paid Research Study: AI Tool Usage in College Work & Daily Life",
-    "company": "Boston UX Research Partners (Craigslist Gig)",
-    "hourlyWage": 50,
-    "location": "Tremont St & Boylston St, Boston, MA",
-    "coords": [
-      42.353,
-      -71.0646
-    ],
-    "nearestStation": {
-      "stationId": "boylston",
-      "name": "Boylston",
-      "line": "Green",
-      "walkMinutes": 1
-    },
-    "workAuth": "All Students",
-    "category": "Events & Gigs",
-    "hoursPerWeek": "One-time (3.5 hr session)",
-    "scheduleFlexibility": "High (Exam Friendly)",
-    "description": "Active paid research gig on Boston Craigslist. Research agency seeking enrolled Boston college students (ages 18-25) to participate in an interactive study exploring how students utilize AI tools (ChatGPT, Claude, Notion AI, Grammarly) for coursework, writing, and daily scheduling.",
-    "responsibilities": [
-      "Complete a 30-min pre-study survey on personal tech habits",
-      "Participate in a 3-hour moderated walkthrough demonstrating your typical workflow",
-      "Provide candid feedback on prototype AI productivity tools"
-    ],
-    "requirements": [
-      "Currently enrolled undergraduate or graduate student in Greater Boston",
-      "Regular user of at least one conversational or generative AI tool",
-      "Punctual and communicative"
-    ],
-    "perks": [
-      "$175 flat compensation ($50/hr equivalent) paid immediately upon completion via digital Visa or Venmo",
-      "Light refreshments provided",
-      "Steps from Boylston Green Line stop"
-    ],
-    "employerRating": 4.8,
-    "employerReviewCount": 29,
-    "payPunctualityRate": 100,
-    "originalSource": "Craigslist",
-    "sourceUrl": "https://www.craigslist.org/view/d/boston-paid-online-study-for-young/3TkjReM1vJvqR9ZBe1eYnx",
-    "postedAgo": "Active Gig",
-    "featured": true,
-    "reviews": [
-      {
-        "id": "rev-cl-ai1",
-        "authorRole": "Emerson Sophomore",
-        "rating": 5,
-        "verifiedStudent": true,
-        "paySpeed": "Instant / Same Day",
-        "vibe": "Super Chill",
-        "comment": "Did their previous study last month. Very professional team. Received the $175 digital card within 10 minutes of finishing.",
-        "date": "Recent",
-        "upvotes": 38
-      }
-    ],
-    "status": "expired",
-    "healthCheckStatus": "dead_link",
-    "lastVerifiedAt": "2026-10-30"
-  },
-  {
     "id": "cl-audio-002",
     "title": "Paid In-Person Audio & Video Speech Conversation Study",
     "company": "Linguistic AI Technology Lab (Craigslist Gig)",
@@ -1020,5 +960,65 @@ export const REAL_CRAWLED_JOBS: JobListing[] = [
     "status": "active",
     "healthCheckStatus": "healthy",
     "lastVerifiedAt": "2026-10-30"
+  },
+  {
+    "id": "gh-formlabs-8315981",
+    "title": "Makerspace Fellow (Winter/Spring 2027)",
+    "company": "Formlabs",
+    "hourlyWage": 28,
+    "location": "35 Medford St, Somerville, MA",
+    "coords": [
+      42.3785,
+      -71.0895
+    ],
+    "nearestStation": {
+      "stationId": "porter",
+      "name": "Porter",
+      "line": "Red",
+      "walkMinutes": 6
+    },
+    "workAuth": "CPT/OPT Eligible",
+    "category": "Corporate Co-op & Intern",
+    "hoursPerWeek": "35 - 40 hrs/wk (Full-time Co-op)",
+    "scheduleFlexibility": "Moderate",
+    "description": "Formlabs Somerville headquarters seeks a hands-on Makerspace Fellow for the Winter/Spring 2027 cohort. Support internal R&D prototyping, maintain SLA/SLS 3D printers, assist engineers with rapid prototyping, and run hardware fabrication workshops.",
+    "responsibilities": [
+      "Operate and maintain Form 3+, Form 4, and Fuse SLS 3D printing equipment in Somerville headquarters",
+      "Assist cross-functional engineering teams with design-for-additive-manufacturing (DfAM) inquiries",
+      "Lead onboarding safety walkthroughs and equipment maintenance logs for company makerspace"
+    ],
+    "requirements": [
+      "Pursuing degree in Mechanical Engineering, Industrial Design, Material Science, or related discipline",
+      "Hands-on experience with CAD (SolidWorks, Onshape, or Fusion 360) and 3D printing slicing software",
+      "Eligibility to work full-time co-op schedule under CPT/OPT or authorized student status"
+    ],
+    "perks": [
+      "$28/hr base pay with overtime eligibility",
+      "Free daily lunch, commuter transit benefits, and 3D printing material allowance",
+      "Direct mentorship from senior hardware & materials engineers"
+    ],
+    "employerRating": 4.8,
+    "employerReviewCount": 42,
+    "payPunctualityRate": 100,
+    "originalSource": "Company Direct",
+    "sourceUrl": "https://careers.formlabs.com/job/8315981/apply/?gh_jid=8315981",
+    "postedAgo": "Active Cohort Opening",
+    "featured": true,
+    "status": "active",
+    "healthCheckStatus": "healthy",
+    "lastVerifiedAt": "2026-10-30",
+    "reviews": [
+      {
+        "id": "rev-form-maker1",
+        "authorRole": "NEU MechE Co-op",
+        "rating": 5,
+        "verifiedStudent": true,
+        "paySpeed": "Bi-Weekly",
+        "vibe": "Super Chill",
+        "comment": "Incredible hardware co-op. You get unlimited access to top-tier SLA and SLS printers and work directly with the creators.",
+        "date": "Recent",
+        "upvotes": 28
+      }
+    ]
   }
 ];

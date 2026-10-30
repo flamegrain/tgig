@@ -1,15 +1,15 @@
 {
   "totalAudited": 17,
-  "activeCount": 16,
-  "expiredCount": 1,
-  "timestamp": "2026-10-30T11:51:54.434Z",
+  "activeCount": 17,
+  "expiredCount": 0,
+  "timestamp": "2026-10-30T15:13:47.820Z",
   "details": [
     {
       "id": "reddit-tourguide-1e48f89",
       "title": "Historic Walking Tour Guide ($25/hr + Tips)",
       "url": "https://www.reddit.com/r/BostonJobs/comments/1e48f89/hiring_tour_guide_boston_ma_25hr_tips/",
       "alive": true,
-      "statusCode": 403,
+      "statusCode": 200,
       "reason": "Active OK"
     },
     {
@@ -17,16 +17,8 @@
       "title": "Student Project Coordinator & Campus Outreach Associate",
       "url": "https://www.reddit.com/r/NEU/comments/1uq9sut/hiring_studentsrecent_grads_paid_parttime/",
       "alive": true,
-      "statusCode": 403,
+      "statusCode": 200,
       "reason": "Active OK"
-    },
-    {
-      "id": "cl-study-001",
-      "title": "Paid Research Study: AI Tool Usage in College Work & Daily Life",
-      "url": "https://www.craigslist.org/view/d/boston-paid-online-study-for-young/3TkjReM1vJvqR9ZBe1eYnx",
-      "alive": false,
-      "statusCode": 410,
-      "reason": "HTTP 410"
     },
     {
       "id": "cl-audio-002",
@@ -136,6 +128,14 @@
       "id": "gh-formlabs-8263054",
       "title": "Global Operations & Supply Chain Intern",
       "url": "https://careers.formlabs.com/job/8263054/apply/?gh_jid=8263054",
+      "alive": true,
+      "statusCode": 200,
+      "reason": "Active OK"
+    },
+    {
+      "id": "gh-formlabs-8315981",
+      "title": "Makerspace Fellow (Winter/Spring 2027)",
+      "url": "https://careers.formlabs.com/job/8315981/apply/?gh_jid=8315981",
       "alive": true,
       "statusCode": 200,
       "reason": "Active OK"
