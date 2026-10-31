@@ -65,7 +65,7 @@ export const REAL_CRAWLED_JOBS: JobListing[] = [
     ],
     "status": "active",
     "healthCheckStatus": "healthy",
-    "lastVerifiedAt": "2026-10-30"
+    "lastVerifiedAt": "2026-10-31"
   },
   {
     "id": "reddit-neu-1uq9sut",
@@ -125,7 +125,7 @@ export const REAL_CRAWLED_JOBS: JobListing[] = [
     ],
     "status": "active",
     "healthCheckStatus": "healthy",
-    "lastVerifiedAt": "2026-10-30"
+    "lastVerifiedAt": "2026-10-31"
   },
   {
     "id": "cl-audio-002",
@@ -185,7 +185,7 @@ export const REAL_CRAWLED_JOBS: JobListing[] = [
     ],
     "status": "active",
     "healthCheckStatus": "healthy",
-    "lastVerifiedAt": "2026-10-30"
+    "lastVerifiedAt": "2026-10-31"
   },
   {
     "id": "cl-convo-003",
@@ -243,7 +243,7 @@ export const REAL_CRAWLED_JOBS: JobListing[] = [
     ],
     "status": "active",
     "healthCheckStatus": "healthy",
-    "lastVerifiedAt": "2026-10-30"
+    "lastVerifiedAt": "2026-10-31"
   },
   {
     "id": "gh-formlabs-8172226",
@@ -303,7 +303,7 @@ export const REAL_CRAWLED_JOBS: JobListing[] = [
     ],
     "status": "active",
     "healthCheckStatus": "healthy",
-    "lastVerifiedAt": "2026-10-30"
+    "lastVerifiedAt": "2026-10-31"
   },
   {
     "id": "gh-formlabs-8241507",
@@ -363,7 +363,7 @@ export const REAL_CRAWLED_JOBS: JobListing[] = [
     ],
     "status": "active",
     "healthCheckStatus": "healthy",
-    "lastVerifiedAt": "2026-10-30"
+    "lastVerifiedAt": "2026-10-31"
   },
   {
     "id": "gh-datadog-8052118",
@@ -423,7 +423,7 @@ export const REAL_CRAWLED_JOBS: JobListing[] = [
     ],
     "status": "active",
     "healthCheckStatus": "healthy",
-    "lastVerifiedAt": "2026-10-30"
+    "lastVerifiedAt": "2026-10-31"
   },
   {
     "id": "gh-datadog-8301102",
@@ -482,7 +482,7 @@ export const REAL_CRAWLED_JOBS: JobListing[] = [
     ],
     "status": "active",
     "healthCheckStatus": "healthy",
-    "lastVerifiedAt": "2026-10-30"
+    "lastVerifiedAt": "2026-10-31"
   },
   {
     "id": "gh-cargurus-8189070",
@@ -542,7 +542,7 @@ export const REAL_CRAWLED_JOBS: JobListing[] = [
     ],
     "status": "active",
     "healthCheckStatus": "healthy",
-    "lastVerifiedAt": "2026-10-30"
+    "lastVerifiedAt": "2026-10-31"
   },
   {
     "id": "gh-recfut-8859086002",
@@ -602,7 +602,7 @@ export const REAL_CRAWLED_JOBS: JobListing[] = [
     ],
     "status": "active",
     "healthCheckStatus": "healthy",
-    "lastVerifiedAt": "2026-10-30"
+    "lastVerifiedAt": "2026-10-31"
   },
   {
     "id": "gh-toast-8047408",
@@ -661,7 +661,7 @@ export const REAL_CRAWLED_JOBS: JobListing[] = [
     ],
     "status": "active",
     "healthCheckStatus": "healthy",
-    "lastVerifiedAt": "2026-10-30"
+    "lastVerifiedAt": "2026-10-31"
   },
   {
     "id": "wag-caregiver-boston",
@@ -721,7 +721,7 @@ export const REAL_CRAWLED_JOBS: JobListing[] = [
     ],
     "status": "active",
     "healthCheckStatus": "healthy",
-    "lastVerifiedAt": "2026-10-30"
+    "lastVerifiedAt": "2026-10-31"
   },
   {
     "id": "neu-tech-snell",
@@ -781,7 +781,7 @@ export const REAL_CRAWLED_JOBS: JobListing[] = [
     ],
     "status": "active",
     "healthCheckStatus": "healthy",
-    "lastVerifiedAt": "2026-10-30"
+    "lastVerifiedAt": "2026-10-31"
   },
   {
     "id": "bu-mugar-circulation",
@@ -840,7 +840,7 @@ export const REAL_CRAWLED_JOBS: JobListing[] = [
     ],
     "status": "active",
     "healthCheckStatus": "healthy",
-    "lastVerifiedAt": "2026-10-30"
+    "lastVerifiedAt": "2026-10-31"
   },
   {
     "id": "harvard-seo-assistant",
@@ -900,7 +900,7 @@ export const REAL_CRAWLED_JOBS: JobListing[] = [
     ],
     "status": "active",
     "healthCheckStatus": "healthy",
-    "lastVerifiedAt": "2026-10-30"
+    "lastVerifiedAt": "2026-10-31"
   },
   {
     "id": "gh-formlabs-8263054",
@@ -959,7 +959,7 @@ export const REAL_CRAWLED_JOBS: JobListing[] = [
     ],
     "status": "active",
     "healthCheckStatus": "healthy",
-    "lastVerifiedAt": "2026-10-30"
+    "lastVerifiedAt": "2026-10-31"
   },
   {
     "id": "gh-formlabs-8315981",
@@ -1006,7 +1006,7 @@ export const REAL_CRAWLED_JOBS: JobListing[] = [
     "featured": true,
     "status": "active",
     "healthCheckStatus": "healthy",
-    "lastVerifiedAt": "2026-10-30",
+    "lastVerifiedAt": "2026-10-31",
     "reviews": [
       {
         "id": "rev-form-maker1",
