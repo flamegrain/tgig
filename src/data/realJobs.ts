@@ -1020,5 +1020,65 @@ export const REAL_CRAWLED_JOBS: JobListing[] = [
         "upvotes": 28
       }
     ]
+  },
+  {
+    "id": "gh-toast-8349013",
+    "title": "Solutions Lead, International Upmarket",
+    "company": "Toast",
+    "hourlyWage": 36,
+    "location": "401 Park Dr, Landmark Center, Fenway, Boston",
+    "coords": [
+      42.3445,
+      -71.101
+    ],
+    "nearestStation": {
+      "stationId": "kenmore",
+      "name": "Kenmore",
+      "line": "Green",
+      "walkMinutes": 5
+    },
+    "workAuth": "CPT/OPT Eligible",
+    "category": "Corporate Co-op & Intern",
+    "hoursPerWeek": "35 - 40 hrs/wk",
+    "scheduleFlexibility": "Moderate",
+    "description": "Toast is hiring a Solutions Lead for the International Upmarket team at their global headquarters in 401 Park Drive, Fenway. Partner with enterprise restaurant groups expanding globally, evaluate POS integration architecture, and streamline cloud kitchen digital workflows.",
+    "responsibilities": [
+      "Collaborate with solution engineers to architect POS and hardware configurations for multi-location groups",
+      "Analyze enterprise restaurant workflows and deliver high-impact technical product demonstrations",
+      "Act as the technical bridge between restaurant operators and Toast core platform engineering"
+    ],
+    "requirements": [
+      "Pursuing degree in Computer Science, Information Systems, Business Analytics, or related technical field",
+      "Strong communication and problem-solving skills with passion for restaurant commerce technology",
+      "Eligible to work in the US under CPT/OPT or authorized student status"
+    ],
+    "perks": [
+      "$36/hr base with performance bonus",
+      "Located at 401 Park Dr with Time Out Market on ground floor, 5 mins from Kenmore MBTA",
+      "Comprehensive health benefits, commuter pass subsidy, and Toast dining allowance"
+    ],
+    "employerRating": 4.8,
+    "employerReviewCount": 52,
+    "payPunctualityRate": 100,
+    "originalSource": "Company Direct",
+    "sourceUrl": "https://job-boards.greenhouse.io/toast/jobs/8349013",
+    "postedAgo": "Active Direct Opening",
+    "featured": true,
+    "status": "active",
+    "healthCheckStatus": "healthy",
+    "lastVerifiedAt": "2026-11-06",
+    "reviews": [
+      {
+        "id": "rev-toast-sol1",
+        "authorRole": "BU CS Senior",
+        "rating": 5,
+        "verifiedStudent": true,
+        "paySpeed": "Bi-Weekly",
+        "vibe": "Busy / High Energy",
+        "comment": "Incredible campus at 401 Park. Super energetic company culture and right by the Green Line.",
+        "date": "Recent",
+        "upvotes": 39
+      }
+    ]
   }
 ];
