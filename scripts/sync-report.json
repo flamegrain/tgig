@@ -1,8 +1,8 @@
 {
   "totalAudited": 18,
-  "activeCount": 17,
-  "expiredCount": 1,
-  "timestamp": "2026-11-09T14:40:53.930Z",
+  "activeCount": 18,
+  "expiredCount": 0,
+  "timestamp": "2026-11-10T00:58:18.409Z",
   "details": [
     {
       "id": "reddit-tourguide-1e48f89",
@@ -96,9 +96,9 @@
       "id": "wag-caregiver-boston",
       "title": "Student Dog Walker & Independent Pet Caregiver",
       "url": "https://wagwalking.com/dog-walker",
-      "alive": false,
-      "statusCode": 408,
-      "reason": "Request Timeout (8s)"
+      "alive": true,
+      "statusCode": 200,
+      "reason": "Active OK"
     },
     {
       "id": "neu-tech-snell",
