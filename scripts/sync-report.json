@@ -1,8 +1,8 @@
 {
   "totalAudited": 18,
-  "activeCount": 18,
-  "expiredCount": 0,
-  "timestamp": "2026-11-12T04:52:41.674Z",
+  "activeCount": 17,
+  "expiredCount": 1,
+  "timestamp": "2026-11-12T14:15:06.297Z",
   "details": [
     {
       "id": "reddit-tourguide-1e48f89",
@@ -32,9 +32,9 @@
       "id": "cl-convo-003",
       "title": "Bring-a-Friend Paid Dialogue & Video Study (Cambridge/Alewife)",
       "url": "https://www.craigslist.org/view/d/belmont-paid-audio-video-conversation/uffJ8TH3U6yTvZjqY4YbN2",
-      "alive": true,
-      "statusCode": 200,
-      "reason": "Active OK"
+      "alive": false,
+      "statusCode": 410,
+      "reason": "HTTP 410"
     },
     {
       "id": "gh-formlabs-8172226",

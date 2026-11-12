@@ -241,8 +241,8 @@ export const REAL_CRAWLED_JOBS: JobListing[] = [
         "upvotes": 31
       }
     ],
-    "status": "active",
-    "healthCheckStatus": "healthy",
+    "status": "expired",
+    "healthCheckStatus": "dead_link",
     "lastVerifiedAt": "2026-11-12"
   },
   {
