@@ -1,15 +1,15 @@
 {
-  "totalAudited": 18,
-  "activeCount": 16,
-  "expiredCount": 2,
-  "timestamp": "2026-11-17T01:16:58.170Z",
+  "totalAudited": 19,
+  "activeCount": 19,
+  "expiredCount": 0,
+  "timestamp": "2026-11-17T09:17:23.604Z",
   "details": [
     {
       "id": "reddit-tourguide-1e48f89",
       "title": "Historic Walking Tour Guide ($25/hr + Tips)",
       "url": "https://www.reddit.com/r/BostonJobs/comments/1e48f89/hiring_tour_guide_boston_ma_25hr_tips/",
       "alive": true,
-      "statusCode": 403,
+      "statusCode": 200,
       "reason": "Active OK"
     },
     {
@@ -17,7 +17,7 @@
       "title": "Student Project Coordinator & Campus Outreach Associate",
       "url": "https://www.reddit.com/r/NEU/comments/1uq9sut/hiring_studentsrecent_grads_paid_parttime/",
       "alive": true,
-      "statusCode": 403,
+      "statusCode": 200,
       "reason": "Active OK"
     },
     {
@@ -27,14 +27,6 @@
       "alive": true,
       "statusCode": 200,
       "reason": "Active OK"
-    },
-    {
-      "id": "cl-convo-003",
-      "title": "Bring-a-Friend Paid Dialogue & Video Study (Cambridge/Alewife)",
-      "url": "https://www.craigslist.org/view/d/belmont-paid-audio-video-conversation/uffJ8TH3U6yTvZjqY4YbN2",
-      "alive": false,
-      "statusCode": 410,
-      "reason": "HTTP 410"
     },
     {
       "id": "gh-formlabs-8172226",
@@ -51,14 +43,6 @@
       "alive": true,
       "statusCode": 200,
       "reason": "Active OK"
-    },
-    {
-      "id": "gh-datadog-8052118",
-      "title": "Software Engineering Intern (Summer Cohort)",
-      "url": "https://careers.datadoghq.com/detail/8052118/?gh_jid=8052118",
-      "alive": false,
-      "statusCode": 404,
-      "reason": "HTTP 404"
     },
     {
       "id": "gh-datadog-8301102",
@@ -89,8 +73,8 @@
       "title": "Territory Account Executive, Retail (Cambridge/Somerville)",
       "url": "https://careers.toasttab.com/jobs?gh_jid=8047408",
       "alive": true,
-      "statusCode": 200,
-      "reason": "Active OK"
+      "statusCode": 202,
+      "reason": "HTTP 202"
     },
     {
       "id": "wag-caregiver-boston",
@@ -144,6 +128,30 @@
       "id": "gh-toast-8349013",
       "title": "Solutions Lead, International Upmarket",
       "url": "https://job-boards.greenhouse.io/toast/jobs/8349013",
+      "alive": true,
+      "statusCode": 202,
+      "reason": "HTTP 202"
+    },
+    {
+      "id": "gh-formlabs-8188725",
+      "title": "Desktop Software Intern (Winter/Spring 2027)",
+      "url": "https://job-boards.greenhouse.io/formlabsinternships/jobs/8188725",
+      "alive": true,
+      "statusCode": 200,
+      "reason": "Active OK"
+    },
+    {
+      "id": "gh-formlabs-8379159",
+      "title": "FP&A Intern (Summer 2027)",
+      "url": "https://careers.formlabs.com/job/8379159/apply/?gh_jid=8379159",
+      "alive": true,
+      "statusCode": 200,
+      "reason": "Active OK"
+    },
+    {
+      "id": "reddit-salon-1w3omdn",
+      "title": "Part-Time Salon Assistant & Front Desk Receptionist",
+      "url": "https://www.reddit.com/r/BostonJobs/comments/1w3omdn/title_hiring_parttime_salon_assistant_reception/",
       "alive": true,
       "statusCode": 200,
       "reason": "Active OK"

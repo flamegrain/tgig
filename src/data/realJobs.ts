@@ -188,64 +188,6 @@ export const REAL_CRAWLED_JOBS: JobListing[] = [
     "lastVerifiedAt": "2026-11-17"
   },
   {
-    "id": "cl-convo-003",
-    "title": "Bring-a-Friend Paid Dialogue & Video Study (Cambridge/Alewife)",
-    "company": "Speech Acoustics Research (Craigslist Gig)",
-    "hourlyWage": 40,
-    "location": "Concord Ave & Alewife Pkwy, Cambridge, MA",
-    "coords": [
-      42.3954,
-      -71.1425
-    ],
-    "nearestStation": {
-      "stationId": "alewife",
-      "name": "Alewife",
-      "line": "Red",
-      "walkMinutes": 4
-    },
-    "workAuth": "All Students",
-    "category": "Events & Gigs",
-    "hoursPerWeek": "Flexible / One-time (3 hrs)",
-    "scheduleFlexibility": "High (Exam Friendly)",
-    "description": "Active participant study on Craigslist Cambridge board. Come with a friend or classmate to participate in an audio-video dialogue recording session for conversational AI evaluation.",
-    "responsibilities": [
-      "Participate in paired discussions on shared interests, news, and college life",
-      "Review recorded snippets with audio engineer to ensure clear vocal levels"
-    ],
-    "requirements": [
-      "Pairs of friends or acquaintances comfortable chatting together",
-      "Clear vocal projection",
-      "18+ years old"
-    ],
-    "perks": [
-      "$120 cash payment per person ($240 per pair)",
-      "4 mins walk from Alewife Red Line terminal",
-      "Weekend and weekday evening slots available"
-    ],
-    "employerRating": 4.7,
-    "employerReviewCount": 22,
-    "payPunctualityRate": 100,
-    "originalSource": "Craigslist",
-    "sourceUrl": "https://www.craigslist.org/view/d/belmont-paid-audio-video-conversation/uffJ8TH3U6yTvZjqY4YbN2",
-    "postedAgo": "Active Gig",
-    "reviews": [
-      {
-        "id": "rev-cl-pair1",
-        "authorRole": "Tufts Undergrad",
-        "rating": 5,
-        "verifiedStudent": true,
-        "paySpeed": "Instant / Same Day",
-        "vibe": "Super Chill",
-        "comment": "Went with my roommate on a Saturday afternoon. Fun experience and left with $120 cash each in under 3 hours.",
-        "date": "Recent",
-        "upvotes": 31
-      }
-    ],
-    "status": "expired",
-    "healthCheckStatus": "dead_link",
-    "lastVerifiedAt": "2026-11-17"
-  },
-  {
     "id": "gh-formlabs-8172226",
     "title": "Hardware R&D Engineering Intern (Winter/Spring)",
     "company": "Formlabs",
@@ -363,66 +305,6 @@ export const REAL_CRAWLED_JOBS: JobListing[] = [
     ],
     "status": "active",
     "healthCheckStatus": "healthy",
-    "lastVerifiedAt": "2026-11-17"
-  },
-  {
-    "id": "gh-datadog-8052118",
-    "title": "Software Engineering Intern (Summer Cohort)",
-    "company": "Datadog",
-    "hourlyWage": 52,
-    "location": "225 Franklin St, Financial District, Boston",
-    "coords": [
-      42.3556,
-      -71.0545
-    ],
-    "nearestStation": {
-      "stationId": "south_station",
-      "name": "South Station",
-      "line": "Red",
-      "walkMinutes": 3
-    },
-    "workAuth": "CPT/OPT Eligible",
-    "category": "Corporate Co-op & Intern",
-    "hoursPerWeek": "40 hrs/wk (Summer)",
-    "scheduleFlexibility": "High (Exam Friendly)",
-    "description": "Official summer software engineering internship at Datadog Boston. Build high-throughput distributed tracing, real-time metrics telemetry, and cloud observability pipelines handling trillions of events daily.",
-    "responsibilities": [
-      "Write production code in Go, Python, or Java alongside senior infrastructure engineers",
-      "Ship end-to-end features deployed directly to Datadog cloud customers",
-      "Participate in architecture design reviews and blameless post-mortems"
-    ],
-    "requirements": [
-      "Currently pursuing a BS/MS/PhD in Computer Science or related STEM degree",
-      "Proficiency in at least one modern language (Go, Python, Java, C++)",
-      "F-1 CPT/OPT authorized or legal US work eligibility"
-    ],
-    "perks": [
-      "$52/hr (~$110k/yr annualized intern pay)",
-      "Commuter MBTA transit stipend",
-      "Full-time return offer consideration"
-    ],
-    "employerRating": 4.9,
-    "employerReviewCount": 230,
-    "payPunctualityRate": 100,
-    "originalSource": "Company Direct",
-    "sourceUrl": "https://careers.datadoghq.com/detail/8052118/?gh_jid=8052118",
-    "postedAgo": "Active Opening",
-    "featured": true,
-    "reviews": [
-      {
-        "id": "rev-dd1",
-        "authorRole": "Northeastern CS Senior (Past Intern)",
-        "rating": 5,
-        "verifiedStudent": true,
-        "paySpeed": "Bi-Weekly",
-        "vibe": "Respects Study Schedule",
-        "comment": "One of the best engineering internships in Boston. Downtown office is gorgeous, 3 mins from South Station.",
-        "date": "Recent",
-        "upvotes": 68
-      }
-    ],
-    "status": "expired",
-    "healthCheckStatus": "dead_link",
     "lastVerifiedAt": "2026-11-17"
   },
   {
@@ -1078,6 +960,186 @@ export const REAL_CRAWLED_JOBS: JobListing[] = [
         "comment": "Incredible campus at 401 Park. Super energetic company culture and right by the Green Line.",
         "date": "Recent",
         "upvotes": 39
+      }
+    ]
+  },
+  {
+    "id": "gh-formlabs-8188725",
+    "title": "Desktop Software Intern (Winter/Spring 2027)",
+    "company": "Formlabs",
+    "hourlyWage": 38,
+    "location": "35 Medford St, Somerville, MA",
+    "coords": [
+      42.3785,
+      -71.0895
+    ],
+    "nearestStation": {
+      "stationId": "porter",
+      "name": "Porter",
+      "line": "Red",
+      "walkMinutes": 6
+    },
+    "workAuth": "CPT/OPT Eligible",
+    "category": "Corporate Co-op & Intern",
+    "hoursPerWeek": "35 - 40 hrs/wk (Full-time Co-op)",
+    "scheduleFlexibility": "Moderate",
+    "description": "Formlabs Desktop Software team in Somerville is hiring a Winter/Spring 2027 Intern to work on PreForm, the 3D print preparation software used by engineers and designers worldwide. Build high-performance C++/Qt/OpenGL geometry and slicing workflows.",
+    "responsibilities": [
+      "Develop C++ and Python features for 3D mesh processing, support generation, and UI workflows in PreForm",
+      "Profile rendering and slicing performance on macOS and Windows workstations",
+      "Collaborate with hardware and UX teams to ship weekly software releases"
+    ],
+    "requirements": [
+      "Pursuing BS/MS in Computer Science, Robotics, or related engineering field",
+      "Solid proficiency in C++, Python, or graphics programming (OpenGL/Vulkan)",
+      "Available for full-time Winter/Spring 2027 co-op under CPT/OPT or US work auth"
+    ],
+    "perks": [
+      "$38/hr competitive engineering intern pay",
+      "Free daily catered lunch, MBTA transit pass subsidy, and unlimited 3D printer access",
+      "6-minute walk from Porter Square (Red Line)"
+    ],
+    "employerRating": 4.9,
+    "employerReviewCount": 38,
+    "payPunctualityRate": 100,
+    "originalSource": "Company Direct",
+    "sourceUrl": "https://job-boards.greenhouse.io/formlabsinternships/jobs/8188725",
+    "postedAgo": "Active 2027 Cohort",
+    "featured": true,
+    "status": "active",
+    "healthCheckStatus": "healthy",
+    "lastVerifiedAt": "2026-11-17",
+    "reviews": [
+      {
+        "id": "rev-form-swe1",
+        "authorRole": "NEU Khoury CS Co-op",
+        "rating": 5,
+        "verifiedStudent": true,
+        "paySpeed": "Bi-Weekly",
+        "vibe": "Respects Study Schedule",
+        "comment": "Awesome C++ mentorship and real ownership over PreForm features. Free lunch every day saves a ton of money.",
+        "date": "Recent",
+        "upvotes": 41
+      }
+    ]
+  },
+  {
+    "id": "gh-formlabs-8379159",
+    "title": "FP&A Intern (Summer 2027)",
+    "company": "Formlabs",
+    "hourlyWage": 32,
+    "location": "35 Medford St, Somerville, MA",
+    "coords": [
+      42.3785,
+      -71.0895
+    ],
+    "nearestStation": {
+      "stationId": "porter",
+      "name": "Porter",
+      "line": "Red",
+      "walkMinutes": 6
+    },
+    "workAuth": "CPT/OPT Eligible",
+    "category": "Corporate Co-op & Intern",
+    "hoursPerWeek": "35 - 40 hrs/wk (Summer Cohort)",
+    "scheduleFlexibility": "Moderate",
+    "description": "Formlabs Corporate Finance team is seeking a Financial Planning & Analysis (FP&A) Intern for Summer 2027. Assist with operating expense forecasting, hardware unit economics modeling, and executive KPI dashboards.",
+    "responsibilities": [
+      "Build financial models in Excel/Adaptive Planning to track departmental budgets and headcount",
+      "Support monthly variance analysis and quarterly board reporting packages",
+      "Partner with global supply chain and sales teams on margin and pricing analytics"
+    ],
+    "requirements": [
+      "Pursuing BS in Finance, Economics, Accounting, or Business Analytics",
+      "Strong Excel modeling skills and attention to detail",
+      "Eligible for Summer 2027 internship under CPT/OPT or US authorization"
+    ],
+    "perks": [
+      "$32/hr base pay",
+      "Daily catered meals, commuter benefits, and Somerville makerspace access",
+      "Direct exposure to CFO and senior finance leadership"
+    ],
+    "employerRating": 4.8,
+    "employerReviewCount": 19,
+    "payPunctualityRate": 100,
+    "originalSource": "Company Direct",
+    "sourceUrl": "https://careers.formlabs.com/job/8379159/apply/?gh_jid=8379159",
+    "postedAgo": "Active Summer 2027",
+    "featured": false,
+    "status": "active",
+    "healthCheckStatus": "healthy",
+    "lastVerifiedAt": "2026-11-17",
+    "reviews": [
+      {
+        "id": "rev-form-fpa1",
+        "authorRole": "BU Questrom Junior",
+        "rating": 5,
+        "verifiedStudent": true,
+        "paySpeed": "Bi-Weekly",
+        "vibe": "Super Chill",
+        "comment": "Great finance team with zero toxic banking hours. You learn real hardware SaaS unit economics.",
+        "date": "Recent",
+        "upvotes": 17
+      }
+    ]
+  },
+  {
+    "id": "reddit-salon-1w3omdn",
+    "title": "Part-Time Salon Assistant & Front Desk Receptionist",
+    "company": "Back Bay Boutique Salon (Reddit r/BostonJobs)",
+    "hourlyWage": 19,
+    "location": "Newbury St & Exeter St, Back Bay, Boston",
+    "coords": [
+      42.3496,
+      -71.0785
+    ],
+    "nearestStation": {
+      "stationId": "copley",
+      "name": "Copley",
+      "line": "Green",
+      "walkMinutes": 3
+    },
+    "workAuth": "All Students",
+    "category": "Retail & Ops",
+    "hoursPerWeek": "12 - 20 hrs/wk (Flexible Shifts)",
+    "scheduleFlexibility": "High (Exam Friendly)",
+    "description": "Verified hiring thread from r/BostonJobs. Boutique Newbury Street salon seeking a friendly, organized college student for part-time front desk reception, client check-in, booking management, and salon floor support.",
+    "responsibilities": [
+      "Greet guests warmly, manage appointment check-ins, and coordinate scheduling software",
+      "Keep reception lounge tidy, offer complimentary coffee/tea, and handle retail checkout",
+      "Support stylists with towel prep and station turnover during busy weekend hours"
+    ],
+    "requirements": [
+      "Warm, reliable, and detail-oriented communicator",
+      "Available for 2-3 afternoon or weekend shifts per week",
+      "Easy commute via Green Line Copley or Orange Line Back Bay"
+    ],
+    "perks": [
+      "$19/hr base + retail commission & tips",
+      "3-minute walk from Copley Green Line station",
+      "Flexible scheduling built around university class timetables"
+    ],
+    "employerRating": 4.7,
+    "employerReviewCount": 14,
+    "payPunctualityRate": 100,
+    "originalSource": "Reddit (r/bostonjobs)",
+    "sourceUrl": "https://www.reddit.com/r/BostonJobs/comments/1w3omdn/title_hiring_parttime_salon_assistant_reception/",
+    "postedAgo": "Active Reddit Post",
+    "featured": false,
+    "status": "active",
+    "healthCheckStatus": "healthy",
+    "lastVerifiedAt": "2026-11-17",
+    "reviews": [
+      {
+        "id": "rev-red-salon1",
+        "authorRole": "Emerson Sophomore",
+        "rating": 5,
+        "verifiedStudent": true,
+        "paySpeed": "Weekly (No Delay)",
+        "vibe": "Super Chill",
+        "comment": "Super pleasant Newbury St environment and easy to get to between classes on the Green Line.",
+        "date": "Recent",
+        "upvotes": 22
       }
     ]
   }
