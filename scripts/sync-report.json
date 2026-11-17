@@ -1,8 +1,8 @@
 {
   "totalAudited": 18,
-  "activeCount": 17,
-  "expiredCount": 1,
-  "timestamp": "2026-11-16T14:17:17.997Z",
+  "activeCount": 16,
+  "expiredCount": 2,
+  "timestamp": "2026-11-17T01:16:58.170Z",
   "details": [
     {
       "id": "reddit-tourguide-1e48f89",
@@ -56,9 +56,9 @@
       "id": "gh-datadog-8052118",
       "title": "Software Engineering Intern (Summer Cohort)",
       "url": "https://careers.datadoghq.com/detail/8052118/?gh_jid=8052118",
-      "alive": true,
-      "statusCode": 200,
-      "reason": "Active OK"
+      "alive": false,
+      "statusCode": 404,
+      "reason": "HTTP 404"
     },
     {
       "id": "gh-datadog-8301102",
