@@ -2,14 +2,14 @@
   "totalAudited": 19,
   "activeCount": 19,
   "expiredCount": 0,
-  "timestamp": "2026-11-17T09:17:23.604Z",
+  "timestamp": "2026-11-17T15:09:17.870Z",
   "details": [
     {
       "id": "reddit-tourguide-1e48f89",
       "title": "Historic Walking Tour Guide ($25/hr + Tips)",
       "url": "https://www.reddit.com/r/BostonJobs/comments/1e48f89/hiring_tour_guide_boston_ma_25hr_tips/",
       "alive": true,
-      "statusCode": 200,
+      "statusCode": 403,
       "reason": "Active OK"
     },
     {
@@ -17,7 +17,7 @@
       "title": "Student Project Coordinator & Campus Outreach Associate",
       "url": "https://www.reddit.com/r/NEU/comments/1uq9sut/hiring_studentsrecent_grads_paid_parttime/",
       "alive": true,
-      "statusCode": 200,
+      "statusCode": 403,
       "reason": "Active OK"
     },
     {
@@ -73,8 +73,8 @@
       "title": "Territory Account Executive, Retail (Cambridge/Somerville)",
       "url": "https://careers.toasttab.com/jobs?gh_jid=8047408",
       "alive": true,
-      "statusCode": 202,
-      "reason": "HTTP 202"
+      "statusCode": 200,
+      "reason": "Active OK"
     },
     {
       "id": "wag-caregiver-boston",
@@ -129,8 +129,8 @@
       "title": "Solutions Lead, International Upmarket",
       "url": "https://job-boards.greenhouse.io/toast/jobs/8349013",
       "alive": true,
-      "statusCode": 202,
-      "reason": "HTTP 202"
+      "statusCode": 200,
+      "reason": "Active OK"
     },
     {
       "id": "gh-formlabs-8188725",
@@ -153,7 +153,7 @@
       "title": "Part-Time Salon Assistant & Front Desk Receptionist",
       "url": "https://www.reddit.com/r/BostonJobs/comments/1w3omdn/title_hiring_parttime_salon_assistant_reception/",
       "alive": true,
-      "statusCode": 200,
+      "statusCode": 403,
       "reason": "Active OK"
     }
   ]
