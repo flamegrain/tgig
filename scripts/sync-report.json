@@ -1,8 +1,8 @@
 {
   "totalAudited": 19,
-  "activeCount": 19,
-  "expiredCount": 0,
-  "timestamp": "2026-11-21T04:46:01.111Z",
+  "activeCount": 18,
+  "expiredCount": 1,
+  "timestamp": "2026-11-21T13:53:43.652Z",
   "details": [
     {
       "id": "reddit-tourguide-1e48f89",
@@ -24,9 +24,9 @@
       "id": "cl-audio-002",
       "title": "Paid In-Person Audio & Video Speech Conversation Study",
       "url": "https://www.craigslist.org/view/d/dorchester-center-paid-audio-video/sYyBKwCMexU4ZCpv7WhLLv",
-      "alive": true,
-      "statusCode": 200,
-      "reason": "Active OK"
+      "alive": false,
+      "statusCode": 410,
+      "reason": "HTTP 410"
     },
     {
       "id": "gh-formlabs-8172226",
