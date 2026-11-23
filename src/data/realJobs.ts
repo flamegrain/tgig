@@ -128,66 +128,6 @@ export const REAL_CRAWLED_JOBS: JobListing[] = [
     "lastVerifiedAt": "2026-11-23"
   },
   {
-    "id": "cl-audio-002",
-    "title": "Paid In-Person Audio & Video Speech Conversation Study",
-    "company": "Linguistic AI Technology Lab (Craigslist Gig)",
-    "hourlyWage": 42,
-    "location": "Dorchester Ave near JFK/UMass, Boston, MA",
-    "coords": [
-      42.3206,
-      -71.0524
-    ],
-    "nearestStation": {
-      "stationId": "jfk_umass",
-      "name": "JFK/UMass",
-      "line": "Red",
-      "walkMinutes": 3
-    },
-    "workAuth": "All Students",
-    "category": "Events & Gigs",
-    "hoursPerWeek": "One-time (3 hr block)",
-    "scheduleFlexibility": "High (Exam Friendly)",
-    "description": "Live research gig sourced from Boston Craigslist. Speech acoustics and machine learning lab recruiting conversational pairs to record natural dialogues for training next-generation multi-speaker voice synthesis systems.",
-    "responsibilities": [
-      "Engage in casual, prompted conversations on everyday topics with another participant",
-      "Wear lightweight noise-canceling clip microphone and follow room audio guidelines",
-      "Complete simple audio verification checks with lab coordinator"
-    ],
-    "requirements": [
-      "Fluent native or bilingual English speaker",
-      "Comfortable with audio and video recording in a private studio room",
-      "18+ years old with valid student or state ID"
-    ],
-    "perks": [
-      "$125 per participant (~$42/hr equivalent) paid on the spot in cash or instant Zelle",
-      "Short 3-minute walk from JFK/UMass Red Line stop",
-      "Snacks and beverages provided"
-    ],
-    "employerRating": 4.9,
-    "employerReviewCount": 41,
-    "payPunctualityRate": 100,
-    "originalSource": "Craigslist",
-    "sourceUrl": "https://www.craigslist.org/view/d/dorchester-center-paid-audio-video/sYyBKwCMexU4ZCpv7WhLLv",
-    "postedAgo": "Active Gig",
-    "featured": true,
-    "reviews": [
-      {
-        "id": "rev-cl-aud1",
-        "authorRole": "UMass Boston Senior",
-        "rating": 5,
-        "verifiedStudent": true,
-        "paySpeed": "Instant / Same Day",
-        "vibe": "Super Chill",
-        "comment": "Super easy money right next to campus. You just talk to someone about everyday stuff and get handed cash.",
-        "date": "Recent",
-        "upvotes": 27
-      }
-    ],
-    "status": "expired",
-    "healthCheckStatus": "dead_link",
-    "lastVerifiedAt": "2026-11-23"
-  },
-  {
     "id": "gh-formlabs-8172226",
     "title": "Hardware R&D Engineering Intern (Winter/Spring)",
     "company": "Formlabs",
@@ -1140,6 +1080,126 @@ export const REAL_CRAWLED_JOBS: JobListing[] = [
         "comment": "Super pleasant Newbury St environment and easy to get to between classes on the Green Line.",
         "date": "Recent",
         "upvotes": 22
+      }
+    ]
+  },
+  {
+    "id": "gh-formlabs-8222268",
+    "title": "Embedded Software Intern (Summer 2027)",
+    "company": "Formlabs",
+    "hourlyWage": 37,
+    "location": "35 Medford St, Somerville, MA",
+    "coords": [
+      42.3785,
+      -71.0895
+    ],
+    "nearestStation": {
+      "stationId": "porter",
+      "name": "Porter",
+      "line": "Red",
+      "walkMinutes": 6
+    },
+    "workAuth": "CPT/OPT Eligible",
+    "category": "Corporate Co-op & Intern",
+    "hoursPerWeek": "35 - 40 hrs/wk (Summer Cohort)",
+    "scheduleFlexibility": "Moderate",
+    "description": "Formlabs Embedded Software team in Somerville is hiring a Summer 2027 Intern to build low-level firmware, Linux drivers, and real-time motion/thermal control loops powering next-generation SLA and SLS 3D printers.",
+    "responsibilities": [
+      "Write and debug C/C++ firmware running on ARM microcontrollers and embedded Linux targets",
+      "Develop automated hardware-in-the-loop (HIL) validation tests for printer sensors and actuators",
+      "Collaborate with electrical and mechanical engineers during hardware bring-up"
+    ],
+    "requirements": [
+      "Pursuing BS/MS in Computer Engineering, Electrical Engineering, or Computer Science",
+      "Experience with C/C++, RTOS/embedded Linux, and hardware interfaces (I2C, SPI, UART, CAN)",
+      "Eligible for Summer 2027 internship under CPT/OPT or US work authorization"
+    ],
+    "perks": [
+      "$37/hr engineering intern compensation",
+      "Daily catered lunch, MBTA transit pass subsidy, and unlimited 3D printing access",
+      "6-minute walk from Porter Square (Red Line)"
+    ],
+    "employerRating": 4.9,
+    "employerReviewCount": 31,
+    "payPunctualityRate": 100,
+    "originalSource": "Company Direct",
+    "sourceUrl": "https://job-boards.greenhouse.io/formlabsinternships/jobs/8222268",
+    "postedAgo": "Active Summer 2027",
+    "featured": true,
+    "status": "active",
+    "healthCheckStatus": "healthy",
+    "lastVerifiedAt": "2026-11-23",
+    "reviews": [
+      {
+        "id": "rev-form-emb1",
+        "authorRole": "MIT EECS Junior",
+        "rating": 5,
+        "verifiedStudent": true,
+        "paySpeed": "Bi-Weekly",
+        "vibe": "Respects Study Schedule",
+        "comment": "You actually get to flash real prototype printers on day one. Incredible hardware+firmware collaboration.",
+        "date": "Recent",
+        "upvotes": 29
+      }
+    ]
+  },
+  {
+    "id": "gh-formlabs-8381504",
+    "title": "Electrical Engineering Intern (Summer 2027)",
+    "company": "Formlabs",
+    "hourlyWage": 35,
+    "location": "35 Medford St, Somerville, MA",
+    "coords": [
+      42.3785,
+      -71.0895
+    ],
+    "nearestStation": {
+      "stationId": "porter",
+      "name": "Porter",
+      "line": "Red",
+      "walkMinutes": 6
+    },
+    "workAuth": "CPT/OPT Eligible",
+    "category": "Corporate Co-op & Intern",
+    "hoursPerWeek": "35 - 40 hrs/wk (Summer Cohort)",
+    "scheduleFlexibility": "Moderate",
+    "description": "Formlabs Electrical Engineering team in Somerville is seeking a Summer 2027 Intern to design, simulate, and bring up custom PCBs, power electronics, laser/optical drivers, and sensor subsystems for industrial 3D printers.",
+    "responsibilities": [
+      "Capture schematics and assist with multi-layer PCB layout in Altium Designer",
+      "Perform benchtop bring-up, oscilloscope debugging, and thermal/EMI characterization",
+      "Support fixture design and automated electrical testing for manufacturing"
+    ],
+    "requirements": [
+      "Pursuing BS/MS in Electrical Engineering or Computer Engineering",
+      "Hands-on experience with Altium/KiCad, lab oscilloscopes, and analog/digital circuit design",
+      "Eligible for Summer 2027 internship under CPT/OPT or US work authorization"
+    ],
+    "perks": [
+      "$35/hr engineering intern pay",
+      "Free catered lunches, transit subsidy, and full electronics lab + makerspace access",
+      "6-minute walk from Porter Square (Red Line)"
+    ],
+    "employerRating": 4.8,
+    "employerReviewCount": 27,
+    "payPunctualityRate": 100,
+    "originalSource": "Company Direct",
+    "sourceUrl": "https://job-boards.greenhouse.io/formlabsinternships/jobs/8381504",
+    "postedAgo": "Active Summer 2027",
+    "featured": false,
+    "status": "active",
+    "healthCheckStatus": "healthy",
+    "lastVerifiedAt": "2026-11-23",
+    "reviews": [
+      {
+        "id": "rev-form-ee1",
+        "authorRole": "NEU ECE Co-op",
+        "rating": 5,
+        "verifiedStudent": true,
+        "paySpeed": "Bi-Weekly",
+        "vibe": "Super Chill",
+        "comment": "Top-notch hardware lab in Somerville and super supportive EE mentors.",
+        "date": "Recent",
+        "upvotes": 24
       }
     ]
   }

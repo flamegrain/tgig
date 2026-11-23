@@ -1,15 +1,15 @@
 {
-  "totalAudited": 19,
-  "activeCount": 18,
-  "expiredCount": 1,
-  "timestamp": "2026-11-23T04:43:15.907Z",
+  "totalAudited": 20,
+  "activeCount": 20,
+  "expiredCount": 0,
+  "timestamp": "2026-11-23T08:40:13.870Z",
   "details": [
     {
       "id": "reddit-tourguide-1e48f89",
       "title": "Historic Walking Tour Guide ($25/hr + Tips)",
       "url": "https://www.reddit.com/r/BostonJobs/comments/1e48f89/hiring_tour_guide_boston_ma_25hr_tips/",
       "alive": true,
-      "statusCode": 403,
+      "statusCode": 200,
       "reason": "Active OK"
     },
     {
@@ -17,16 +17,8 @@
       "title": "Student Project Coordinator & Campus Outreach Associate",
       "url": "https://www.reddit.com/r/NEU/comments/1uq9sut/hiring_studentsrecent_grads_paid_parttime/",
       "alive": true,
-      "statusCode": 403,
+      "statusCode": 200,
       "reason": "Active OK"
-    },
-    {
-      "id": "cl-audio-002",
-      "title": "Paid In-Person Audio & Video Speech Conversation Study",
-      "url": "https://www.craigslist.org/view/d/dorchester-center-paid-audio-video/sYyBKwCMexU4ZCpv7WhLLv",
-      "alive": false,
-      "statusCode": 410,
-      "reason": "HTTP 410"
     },
     {
       "id": "gh-formlabs-8172226",
@@ -153,7 +145,23 @@
       "title": "Part-Time Salon Assistant & Front Desk Receptionist",
       "url": "https://www.reddit.com/r/BostonJobs/comments/1w3omdn/title_hiring_parttime_salon_assistant_reception/",
       "alive": true,
-      "statusCode": 403,
+      "statusCode": 200,
+      "reason": "Active OK"
+    },
+    {
+      "id": "gh-formlabs-8222268",
+      "title": "Embedded Software Intern (Summer 2027)",
+      "url": "https://job-boards.greenhouse.io/formlabsinternships/jobs/8222268",
+      "alive": true,
+      "statusCode": 200,
+      "reason": "Active OK"
+    },
+    {
+      "id": "gh-formlabs-8381504",
+      "title": "Electrical Engineering Intern (Summer 2027)",
+      "url": "https://job-boards.greenhouse.io/formlabsinternships/jobs/8381504",
+      "alive": true,
+      "statusCode": 200,
       "reason": "Active OK"
     }
   ]
