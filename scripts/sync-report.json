@@ -1,8 +1,8 @@
 {
   "totalAudited": 20,
-  "activeCount": 20,
-  "expiredCount": 0,
-  "timestamp": "2026-11-23T16:50:10.616Z",
+  "activeCount": 19,
+  "expiredCount": 1,
+  "timestamp": "2026-11-24T03:36:51.463Z",
   "details": [
     {
       "id": "reddit-tourguide-1e48f89",
@@ -104,9 +104,9 @@
       "id": "gh-formlabs-8263054",
       "title": "Global Operations & Supply Chain Intern",
       "url": "https://careers.formlabs.com/job/8263054/apply/?gh_jid=8263054",
-      "alive": true,
-      "statusCode": 200,
-      "reason": "Active OK"
+      "alive": false,
+      "statusCode": 404,
+      "reason": "HTTP 404"
     },
     {
       "id": "gh-formlabs-8315981",
