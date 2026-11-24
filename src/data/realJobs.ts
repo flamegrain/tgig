@@ -1006,8 +1006,8 @@ export const REAL_CRAWLED_JOBS: JobListing[] = [
     "sourceUrl": "https://careers.formlabs.com/job/8379159/apply/?gh_jid=8379159",
     "postedAgo": "Active Summer 2027",
     "featured": false,
-    "status": "active",
-    "healthCheckStatus": "healthy",
+    "status": "expired",
+    "healthCheckStatus": "dead_link",
     "lastVerifiedAt": "2026-11-24",
     "reviews": [
       {

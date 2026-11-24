@@ -1,8 +1,8 @@
 {
   "totalAudited": 20,
-  "activeCount": 19,
-  "expiredCount": 1,
-  "timestamp": "2026-11-24T03:36:51.463Z",
+  "activeCount": 18,
+  "expiredCount": 2,
+  "timestamp": "2026-11-24T16:42:09.227Z",
   "details": [
     {
       "id": "reddit-tourguide-1e48f89",
@@ -136,9 +136,9 @@
       "id": "gh-formlabs-8379159",
       "title": "FP&A Intern (Summer 2027)",
       "url": "https://careers.formlabs.com/job/8379159/apply/?gh_jid=8379159",
-      "alive": true,
-      "statusCode": 200,
-      "reason": "Active OK"
+      "alive": false,
+      "statusCode": 404,
+      "reason": "HTTP 404"
     },
     {
       "id": "reddit-salon-1w3omdn",
